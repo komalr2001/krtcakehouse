@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        cake
+    </title>
+    <style>
+        .xyz {
+            color: #e67300;
+            color: #9999ff;
+            color: #ffcc00;
+            color: #ffe6cc
+        }
+
+        .nav {
+            background-color: brown;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+
+
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #ffe6cc;
+        }
+
+        .cakenav {
+            height: 50px;
+        }
+
+        .company {
+            color: white;
+            font-weight: bold;
+            margin-left: 13px;
+            font-family: 'Times New Roman', Times, serif;
+            margin-bottom: 13px;
+            font-size: 30px;
+        }
+
+        .menunav {
+
+            font-weight: bold;
+            margin-left: 13px;
+            font-family: 'Times New Roman', Times, serif;
+            margin-bottom: 13px;
+            font-size: 20px;
+            cursor: pointer;
+            background-color: #ffe6cc;
+            border-radius: 20px;
+            padding: 5px 20px;
+
+        }
+
+        .menunav:hover {
+            background-color: #e67300;
+            box-shadow: 0 0 5px 5px white;
+            padding: 7px 25px;
+            transition: 0.5s;
+       
+
+        }
+
+        .menucontainer {
+            margin-left:450px;
+        }
+
+        .shopimg {
+            height: 320px;
+            margin: 30px;
+            border-radius: 50px;
+        }
+
+        .head {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+
+        }
+
+        .slogan {
+            color: brown;
+            font-size: 50px;
+        }
+
+        .slg {
+            color: brown;
+            font-size: 20px;
+        }
+
+        .exp {
+            background-color: #e67300;
+            border-radius: 30px;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            padding: 20px;
+            margin: 10px;
+            cursor: pointer;
+            box-shadow: 0 0 5px 5px brown;
+        }
+
+        .features {
+            color: brown;
+            font-size: 50px;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .feacard {
+            width: 300px;
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 13px;
+            box-shadow: 0 0 2px 2px white;
+            position: relative;
+
+
+        }
+
+        .icon {
+            font-size: 50px;
+            position: absolute;
+            top: -50px;
+            left: 120px;
+            background-color: white;
+            padding: 10px;
+            border-radius: 10px;
+            border: 1px solid brown;
+            color: brown;
+            box-shadow: 0 0 1.5px 1.5px brown;
+
+
+        }
+
+        .featitle {
+            text-align: center;
+            color: brown;
+            font-size: 22px;
+        }
+
+        .feadisc {
+            text-align: center;
+        }
+
+        .carddiv {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 50px;
+
+        }
+
+        .ourcakes {
+            font-size: 50px;
+            text-align: center;
+            color: brown;
+            margin-top: 50px;
+        }
+
+        .cakecard {
+            background-color: white;
+            width: 280px;
+            padding: 40px 20px;
+            margin: 20px;
+            border-radius: 20px;
+            box-shadow: 0 0 10px brown;
+
+
+        }
+
+        .cakeimg {
+            height: 160px;
+            display: block;
+            margin: 5px auto;
+            filter: drop-shadow(0 0 5px brown);
+
+
+        }
+
+        .cakecardtitle {
+            text-align: center;
+            color: brown;
+            font-size: 25px;
+
+        }
+
+        .price {
+            font-size: 24px;
+            color: brown;
+            text-align: center;
+
+        }
+
+        .ord {
+
+            background-color: #e67300;
+            border-radius: 30px;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            padding: 05px;
+            margin: 10px auto;
+            cursor: pointer;
+            box-shadow: 0 0 3px 3px brown;
+            display: block;
+        }
+
+        .cakecont {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 50px;
+        }
+
+.contact{
+    background-color: brown;
+    height: 130px;
+    width: 100%;
+    margin-top: 80px;
+   
+}
+        
+
+        @media (max-width:600px) {
+            .nav {
+
+                flex-direction: column;
+            }
+
+            .menucontainer {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .menunav {
+                display: block;
+                margin: 10px;
+                text-align: center;
+                width: 100%;
+            }
+
+            .shopimg {
+                height: 200px;
+                margin: 30px;
+                border-radius: 50px;
+
+            }
+
+            .slogan {
+                font-size: 30px;
+            }
+
+            .slg {
+                font-size: 15px;
+            }
+
+            .exp {
+                font-size: 15px;
+                padding: 15;
+            }
+
+            .feacard {
+                margin-top: 70px;
+            }
+        }
+
+        @media (min-width:601px) and (max-width:800px) {
+            .menucontainer {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .feacard {
+                margin-top: 70px;
+            }
+        }
+
+        @media (min-width:801px) and (max-width:1400px) {
+            .feacard {
+                margin-top: 80px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <div>
+            <img src="love.png" class="cakenav" />
+
+
+            <span class="company"> KRT cake house</span>
+
+
+        </div>
+
+        <div class="menucontainer" ;">
+            <span class="menunav">Home</span>
+            <span class="menunav">About</span>
+            <span class="menunav">Services</span>
+            <span class="menunav">Contact</span>
+        </div>
+
+    </div>
+    <div class="head">
+        <div>
+            <img src="shop1.jpg" class="shopimg" />
+        </div>
+        <div>
+            <h1 class="slogan"> We bake your dream ...</h1>
+            <P class="slg"> ORDER your favourite cake now!</P>
+            <button class="exp" type="button">Explore Cakes</button>
+        </div>
+
+    </div>
+
+
+    <div>
+
+        <h1 class="features"> why choose us?</h1>
+        <div class="carddiv">
+            <div class="feacard">
+                <i class="fa-solid fa-fire-burner icon"></i>
+                <h3 class="featitle">Freshly Backed Cakes</h3>
+                <p class="feadisc">Our cakes are freshly baked and are delivered to you within 4 hours of baking</p>
+
+            </div>
+            <div class="feacard">
+                <i class="fa-solid fa-person-biking icon"></i>
+
+                <h3 class="featitle">Free delivery</h3>
+                <p class="feadisc">We provide free delivery of cakes within 10km of our shop </p>
+
+            </div>
+            <div class="feacard">
+                <i class="fa-solid fa-coins icon"></i>
+                <h3 class="featitle">lowest price</h3>
+                <p class="feadisc"> we provide our all the cakes within very resonable price </p>
+
+            </div>
+            <div class="feacard">
+                <i class="fa-solid fa-egg icon"></i>
+                <h3 class="featitle"> Egg less cakes</h3>
+                <p class="feadisc">We also provide cakes without including a egg in cakes batter</p>
+
+            </div>
+        </div>
+    </div>
+    <h1 class="ourcakes"> Our cakes</h1>
+    <div class="cakecont">
+        <div class="cakecard">
+            <img src="love.png" class="cakeimg" />
+            <h3 class="cakecardtitle"> love cake</h3>
+            <p class="price"><del>600</del> ₹500</p>
+            <button class="ord">Order now</button>
+
+        </div>
+        <div class="cakecard">
+            <img src="chocolate.png" class="cakeimg" />
+            <h3 class="cakecardtitle"> chocolate cake</h3>
+            <p class="price"><del>600</del> ₹550</p>
+            <button class="ord">Order now</button>
+
+        </div>
+        <div class="cakecard">
+            <img src="pineapple.png" class="cakeimg" />
+            <h3 class="cakecardtitle"> pineapple cake</h3>
+            <p class="price"><del>500</del> ₹400</p>
+            <button class="ord">Order now</button>
+
+        </div>
+        <div class="cakecard">
+            <img src="strawberry (2).png" class="cakeimg" />
+            <h3 class="cakecardtitle"> strawberry cake</h3>
+            <p class="price"><del>900</del> ₹800</p>
+            <button class="ord">Order now</button>
+
+        </div>
+        <div class="cakecard">
+            <img src="plane.png" class="cakeimg" />
+            <h3 class="cakecardtitle"> plane cake</h3>
+            <p class="price"><del>400</del> ₹250</p>
+            <button class="ord">Order now</button>
+
+        </div>
+        <div class="cakecard">
+            <img src="egless.png" class="cakeimg" />
+            <h3 class="cakecardtitle"> eggless cake</h3>
+            <p class="price"><del>600</del> ₹500</p>
+            <button class="ord">Order now</button>
+
+        </div>
+        <div class="cakecard">
+            <img src="rasmalai.png" class="cakeimg" />
+            <h3 class="cakecardtitle"> rasmalai cake</h3>
+            <p class="price"><del>1000</del> ₹850</p>
+            <button class="ord">Order now</button>
+
+        </div>
+        <div class="cakecard">
+            <img src="cake.png" class="cakeimg" />
+            <h3 class="cakecardtitle"> pestry</h3>
+            <p class="price"><del>80</del> ₹70</p>
+            <button class="ord">Order now</button>
+
+        </div>
+        <div class="cakecard">
+            <img src="cream.png" class="cakeimg" />
+            <h3 class="cakecardtitle"> cream cake</h3>
+            <p class="price"><del>500</del> ₹400</p>
+            <button class="ord">Order now</button>
+
+        </div>
+    </div>
+<div class="contact"> 
+    <h1 style="color: white; font-size: 50px; margin-bottom: 2px; ">Contact us </h1>
+  
+    <br/>
+    <a href="tel:7057059578" style="color: white; font-size: 20px; ">phone:7057059578</a>
+    <br/>
+    <a href="mailto:tembharekomal91@gmail.com"  style="color: white; font-size:20px;">mail:tembharekomal91@gmail.com</a>
+</div>
+
+    <script src="https://kit.fontawesome.com/9bf315410c.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
